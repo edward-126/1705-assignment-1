@@ -66,3 +66,23 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  @apply scroll-m-20 text-balance text-5xl leading-[3.62rem] tracking-normal sm:text-[4rem];
+}
+
+h2 {
+  @apply scroll-m-20 text-balance text-2xl font-semibold tracking-tight;
+}
+
+h3 {
+  @apply scroll-m-20 text-balance text-xl font-bold tracking-tight;
+}
+
+p {
+  @apply text-base leading-6;
+}
+
+small {
+  @apply text-xs leading-3;
+}
