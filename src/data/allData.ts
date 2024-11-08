@@ -31,21 +31,21 @@ export const CONCERTINFO = [
 
 export const NEWSINFO = [
   {
-    title: "Goo Goo Dolls announce 2023 UK and Ireland tour",
+    title: `Goo Goo Dolls announce 2023 UK and Ireland<br/> tour`,
     category: "News",
     date: "30th March 2022",
-    imgUrl: "",
+    imgUrl: "/assets/news-img-2.png",
   },
   {
-    title: "Avril Lavigne's New Hit Single 'Head Above Water'",
+    title: `Avril Lavigne's New Hit Single "Head Above <br/> Water"`,
     category: "News",
     date: "30th March 2022",
-    imgUrl: "",
+    imgUrl: "/assets/news-img-1.jpg",
   },
   {
-    title: "Simple Plan Marks 20-Year Anniversary Of Iconic Album",
+    title: `Simple Plan Marks 20-Year Anniversary Of Iconic Album`,
     category: "News",
     date: "30th March 2022",
-    imgUrl: "",
+    imgUrl: "/assets/news-img-3.png",
   },
 ];

@@ -44,7 +44,7 @@ export const HomeCards = () => {
                   return (
                     <div
                       className={cn(
-                        "flex cursor-[url('/assets/cursor.svg')_25_25,_pointer] flex-col gap-5 rounded-lg p-7 shadow-lg transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[1.01]",
+                        "flex cursor-[url('/assets/cursor-play.svg')_25_25,_pointer] flex-col gap-5 rounded-lg p-7 shadow-lg transition-all duration-300 ease-in-out hover:scale-[1.03] active:scale-[1.01]",
                         COLORS[idx % COLORS.length],
                       )}
                       key={idx}
@@ -82,10 +82,13 @@ export const HomeCards = () => {
             </div>
             {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="hidden items-start gap-3 sm:flex">
-              <p>
-                <span className="font-semibold">02</span> / 04
-              </p>
+            <div className="hidden w-24 items-start justify-end gap-3 sm:flex">
+              <div className="h-full">
+                <div className="h-[50px]" />
+                <p>
+                  <span className="font-semibold">02</span> / 04
+                </p>
+              </div>
               <div className="h-40 w-2 rounded-full bg-primary/20">
                 <div className="h-1/4 w-full bg-transparent" />
                 <div className="h-1/4 w-full rounded-full bg-primary" />

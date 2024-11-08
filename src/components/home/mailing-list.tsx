@@ -18,7 +18,7 @@ export const MailingList = () => {
                   priority
                   src="/assets/mailing-img.svg"
                   alt="hero-image"
-                  className="pointer-events-none h-full scale-[1] select-none"
+                  className="pointer-events-none h-full select-none"
                 />
               </div>
               <div className="mt-6 flex flex-1 flex-col gap-4 sm:mt-0 sm:gap-8">
@@ -44,10 +44,13 @@ export const MailingList = () => {
             </div>
             {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="hidden items-start gap-3 sm:flex">
-              <p>
-                <span className="font-semibold">03</span> / 04
-              </p>
+            <div className="hidden w-24 items-start justify-end gap-3 sm:flex">
+              <div className="h-full">
+                <div className="h-[90px]" />
+                <p>
+                  <span className="font-semibold">03</span> / 04
+                </p>
+              </div>
               <div className="h-40 w-2 rounded-full bg-primary/20">
                 <div className="h-1/4 w-full bg-transparent" />
                 <div className="h-1/4 w-full bg-transparent" />
