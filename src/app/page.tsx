@@ -1,4 +1,4 @@
-import { Hero, HomeCards } from "@/components/home";
+import { Hero, HomeCards, MailingList } from "@/components/home";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <div className="flex flex-col">
         <Hero />
         <HomeCards />
+        <MailingList />
       </div>
     </>
   );

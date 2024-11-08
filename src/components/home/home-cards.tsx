@@ -19,9 +19,9 @@ export const HomeCards = () => {
 
   return (
     <>
-      <section className="h-dvh overflow-y-hidden">
+      <section className="overflow-y-hidden max-sm:min-h-dvh sm:h-dvh">
         <MaxWidthWrapper className="relative flex h-full items-center">
-          <div className="flex justify-between">
+          <div className="my-24 flex justify-between sm:my-0">
             <div className="flex flex-1 flex-col gap-4 sm:gap-8">
               <h1 className={cn("", BEBAS_NEUE.className)}>
                 watch your favorite artists onstage
@@ -32,6 +32,8 @@ export const HomeCards = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.{" "}
               </p>
+
+              {/* cards */}
               <div className="flex -space-x-72 max-sm:mt-4">
                 {Array.from({ length: 5 }).map((_, idx) => {
                   const zIndex =
@@ -85,7 +87,7 @@ export const HomeCards = () => {
                 <span className="font-semibold">02</span> / 04
               </p>
               <div className="h-40 w-2 rounded-full bg-primary/20">
-                <div className="w-fullbg-transparent h-1/4" />
+                <div className="h-1/4 w-full bg-transparent" />
                 <div className="h-1/4 w-full rounded-full bg-primary" />
               </div>
             </div>

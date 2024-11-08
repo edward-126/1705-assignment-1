@@ -15,7 +15,7 @@ import { HomeNav } from "./home-nav";
 export const Hero = () => {
   return (
     <>
-      <section className="h-dvh overflow-y-hidden bg-[#EBCFBF] bg-[url('/assets/hero-noise.svg')]">
+      <section className="overflow-y-hidden bg-[#EBCFBF] bg-[url('/assets/hero-noise.svg')] max-sm:min-h-dvh sm:h-dvh">
         {/* hero nav */}
         <HomeNav />
         <MaxWidthWrapper className="relative mt-20 h-fit">
@@ -66,7 +66,7 @@ export const Hero = () => {
             </div>
             {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="flex items-start gap-3">
+            <div className="hidden items-start gap-3 sm:flex">
               <p>
                 <span className="font-semibold">01</span> / 04
               </p>
