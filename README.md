@@ -1,79 +1,44 @@
-# Next.js Template by Thilina Rathnayaka (A.K.A Edward Hyde)
+# 1705 Studio Assignment
 
-This Next.js template, created by Thilina, is designed to kickstart your Next.js projects with essential dependencies and a modern foundation for building web applications using TypeScript. It has been updated to use the `/src/app` directory structure for better organization.
+This is the project submission for 1705 Studio's assignment, created by Thilina Rathnayaka. The project implements the design and functionality requirements specified by the studio, with a focus on quality, detail, and user experience.
 
-## Features
+## Important Points
 
-### Dependencies
+- **For Proper Comparison**: Add a custom device in your browser’s inspect tool with the resolution of **1440×810** for optimal viewing and comparison.
+- **Responsive Design**: The project is fully responsive, ensuring it looks great on all screen sizes.
+- **Cross-Browser Compatibility**: Tested on major browsers for consistent user experience.
+- **Optimized Performance**: The project is optimized for fast load times and smooth interaction.
 
-This template includes the following dependencies commonly used in Next.js projects:
+## Installation
 
-- **Tailwind CSS**: A utility-first CSS framework for creating responsive and custom designs with ease.
-- **ShadCn**: A collection of reusable components that can be integrated into your app.
-- **Class Variance Authority**: A library for managing class names with a consistent API.
-- **Lucide React**: A set of customizable, scalable icons.
+To run the project locally, follow these steps:
 
-### TypeScript Support
-
-This template is configured to work with TypeScript, providing type safety and an enhanced development experience.
-
-### Custom Components
-
-The template includes a set of essential components to get you started. These components are ready to be customized and extended to suit your project needs.
-
-## Getting Started
-
-To create a new project using this template, follow these steps:
-
-1. Open your terminal.
-2. Run the following command and follow the prompts:
-
+1. Clone the repository:
    ```bash
-   npx @edward-hyde/template-next
+   git clone https://github.com/edward-126/1705-assignment-1.git
    ```
 
-3. You will be asked to enter a name for your project. Press Enter for the default name 'my-next-app'.
-
-4. Once the project is generated, navigate into the newly created directory:
-
+2. Navigate to the project directory:
    ```bash
-   cd PROJECT-NAME
+   cd 1705-studio-assignment-1
    ```
 
-5. Start the development server:
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
+4. Start the development server:
    ```bash
    npm run dev
-   # or
-   yarn dev
-   # or
-   pnpm dev
-   # or
-   bun dev
    ```
 
-6. Open your browser and visit `http://localhost:3000` to see your new Next.js project in action.
+5. Visit the application at [http://localhost:3000](http://localhost:3000).
 
-## Additional CLI Features
+## Deployment
 
-### Current Directory Cloning
+The project is deployed on [Vercel](https://vercel.com/home), and can be accessed at: [1705-assignment-1.vercel.app](https://1705-assignment-1.vercel.app/).
 
-Template-NEXT allows you to clone the template directly into your working directory, useful for adding it to existing project structures. Run:
+## Acknowledgments
 
-```bash
-npx @edward-hyde/template-next .
-```
-
-The CLI will walk you through the setup process, offering clearer instructions and tailored steps based on your choices.
-
-## Contributing
-
-If you encounter any issues with the template or have suggestions for improvements, feel free to contribute by submitting pull requests or opening issues on the GitHub repository.
-
-For more information, visit the [Getting Started Guide](https://its-thilina-blog.vercel.app/blog/template-next-get-started).
-
----
-
-Contact Me: [Gmail](mailto:edwardhyde20126@gmail.com)
-
-&copy; 2024 Thilina R.
+- Thanks to 1705 Studio for the opportunity to work on this assignment.
