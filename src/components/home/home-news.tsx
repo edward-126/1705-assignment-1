@@ -25,7 +25,7 @@ export const HomeNews = () => {
               <div className="group/grid my-12 grid gap-4 sm:grid-cols-3 [&:hover>li]:opacity-80">
                 {NEWSINFO.map((newsItem, idx) => (
                   <li
-                    className="group/card relative flex cursor-[url('/assets/cursor-read.svg')_25_25,_pointer] flex-col overflow-hidden rounded-lg bg-background shadow-xl transition-all duration-300 ease-in-out hover:z-50 hover:scale-125 hover:!opacity-100 active:scale-[1.2]"
+                    className="group/card relative flex cursor-[url('/assets/cursor-read.svg')_25_25,_pointer] flex-col overflow-hidden rounded-lg bg-background shadow-xl transition-all duration-300 ease-in-out hover:z-50 hover:scale-[1.02] hover:!opacity-100 active:scale-[1.01] sm:hover:scale-125 sm:active:scale-[1.2]"
                     key={idx}
                   >
                     <Image
