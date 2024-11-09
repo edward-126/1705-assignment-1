@@ -9,7 +9,7 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="relative *:sticky *:top-0">
+      <div className="relative sm:*:sticky sm:*:top-0">
         <Hero />
         <HomeCards />
         <MailingList />

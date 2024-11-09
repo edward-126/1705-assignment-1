@@ -5,8 +5,9 @@ import Link from "next/link";
 import { MaxWidthWrapper } from "../shared";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
+import { MobileNav } from "./mobile-nav";
 
-const NAVLINKS = [
+export const NAVLINKS = [
   {
     label: "Home",
     href: "/",
@@ -32,7 +33,7 @@ export const HomeNav = () => {
     <>
       <nav className="border-b border-primary">
         <MaxWidthWrapper>
-          <div className="flex h-[4.5rem] items-center justify-end gap-6">
+          <div className="hidden h-[4.5rem] items-center justify-end gap-6 sm:flex">
             {NAVLINKS.map((navItem, idx) => (
               <Link
                 className={cn(
@@ -56,6 +57,9 @@ export const HomeNav = () => {
             >
               <Link href="/register">Register for Upcoming Events</Link>
             </Button>
+          </div>
+          <div className="flex h-20 items-center justify-end sm:hidden">
+            <MobileNav />
           </div>
         </MaxWidthWrapper>
       </nav>

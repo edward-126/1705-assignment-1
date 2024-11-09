@@ -18,10 +18,22 @@ export const Hero = () => {
       <section className="overflow-y-hidden bg-[#EBCFBF] bg-[url('/assets/hero-noise.svg')] max-sm:min-h-dvh sm:h-dvh">
         {/* hero nav */}
         <HomeNav />
-        <MaxWidthWrapper className="relative mt-20 h-fit">
+        <MaxWidthWrapper className="relative mt-1 h-fit sm:mt-20">
           <div className="flex justify-between">
             {/* hero text */}
-            <div className="mt-12 flex flex-col gap-2">
+            <div className="flex flex-col gap-2 sm:mt-12">
+              {/* hero image (>640px) */}
+              <div className="my-8 block h-full overflow-hidden sm:hidden">
+                <Image
+                  height={671}
+                  width={851}
+                  priority
+                  src="/assets/hero-img.svg"
+                  alt="hero-image"
+                  className="pointer-events-none h-full scale-[1] select-none"
+                />
+              </div>
+
               <h1 className={cn("", BEBAS_NEUE.className)}>
                 book your <br /> concert tickets
               </h1>
@@ -40,13 +52,13 @@ export const Hero = () => {
                     loop: true,
                   }}
                   orientation="vertical"
-                  className="relative mt-2 w-full max-w-64"
+                  className="relative mt-2 w-full sm:max-w-64"
                 >
                   <CarouselContent className="-mt-1 h-[370px]">
                     {CONCERTINFO.map((concertInfo, idx) => (
                       <CarouselItem
                         key={idx}
-                        className="md:basis-1/2 [&:not(:first-child)]:pt-7"
+                        className="basis-1 md:basis-1/2 [&:not(:first-child)]:pt-7"
                       >
                         <ConcertCard
                           band={concertInfo.band}
@@ -78,8 +90,8 @@ export const Hero = () => {
               </div>
             </div>
           </div>
-          {/* hero image */}
-          <div className="absolute -bottom-5 -right-8 overflow-hidden">
+          {/* hero image (<640px) */}
+          <div className="absolute -bottom-5 -right-8 hidden overflow-hidden sm:block">
             <Image
               height={671}
               width={851}
