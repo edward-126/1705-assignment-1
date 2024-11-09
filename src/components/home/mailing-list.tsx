@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MaxWidthWrapper } from "../shared";
+import { Counter, MaxWidthWrapper } from "../shared";
 import { cn } from "@/lib/utils";
 import { BEBAS_NEUE } from "@/lib/fonts";
 import { Button } from "../ui/button";
@@ -42,21 +42,8 @@ export const MailingList = () => {
                 </div>
               </div>
             </div>
-            {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="hidden w-24 items-start justify-end gap-3 sm:flex">
-              <div className="h-full">
-                <div className="h-[90px]" />
-                <p>
-                  <span className="font-semibold">03</span> / 04
-                </p>
-              </div>
-              <div className="h-40 w-2 rounded-full bg-primary/20">
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full rounded-full bg-primary" />
-              </div>
-            </div>
+            <Counter id={3} />
           </div>
         </MaxWidthWrapper>
       </section>

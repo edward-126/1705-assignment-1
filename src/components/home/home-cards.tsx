@@ -5,6 +5,7 @@ import { MaxWidthWrapper } from "../shared/max-width-wrapper";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { Button } from "../ui/button";
+import { Counter } from "../shared";
 
 const COLORS = [
   "bg-[#F8D38E]",
@@ -80,20 +81,9 @@ export const HomeCards = () => {
                 <Button>View Events and Register</Button>
               </div>
             </div>
-            {/* TODO: make the counter functional */}
+
             {/* counter */}
-            <div className="hidden w-24 items-start justify-end gap-3 sm:flex">
-              <div className="h-full">
-                <div className="h-[50px]" />
-                <p>
-                  <span className="font-semibold">02</span> / 04
-                </p>
-              </div>
-              <div className="h-40 w-2 rounded-full bg-primary/20">
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full rounded-full bg-primary" />
-              </div>
-            </div>
+            <Counter id={2} />
           </div>
         </MaxWidthWrapper>
       </section>

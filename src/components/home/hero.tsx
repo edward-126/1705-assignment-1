@@ -8,7 +8,7 @@ import { BEBAS_NEUE } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { MaxWidthWrapper } from "../shared";
+import { Counter, MaxWidthWrapper } from "../shared";
 import { ConcertCard } from "./concert-card";
 import { HomeNav } from "./home-nav";
 
@@ -76,19 +76,8 @@ export const Hero = () => {
                 </Carousel>
               </div>
             </div>
-            {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="hidden w-24 items-start justify-end gap-3 sm:flex">
-              <div className="h-full">
-                <div className="h-[10px]" />
-                <p>
-                  <span className="font-semibold">01</span> / 04
-                </p>
-              </div>
-              <div className="h-40 w-2 rounded-full bg-primary/20">
-                <div className="h-1/4 w-full rounded-full bg-primary"></div>
-              </div>
-            </div>
+            <Counter id={1} />
           </div>
           {/* hero image (<640px) */}
           <div className="absolute -bottom-5 -right-8 hidden overflow-hidden sm:block">

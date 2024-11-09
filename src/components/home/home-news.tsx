@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { MaxWidthWrapper } from "../shared";
+import { Counter, MaxWidthWrapper } from "../shared";
 import { BEBAS_NEUE } from "@/lib/fonts";
 import { NEWSINFO } from "@/data/allData";
 import { Button } from "../ui/button";
@@ -67,22 +67,8 @@ export const HomeNews = () => {
                 <Button>Show Me More</Button>
               </div>
             </div>
-            {/* TODO: make the counter functional */}
             {/* counter */}
-            <div className="mt-20 hidden h-fit w-24 items-start justify-end gap-3 sm:flex">
-              <div className="h-full">
-                <div className="h-[130px]" />
-                <p>
-                  <span className="font-semibold">04</span> / 04
-                </p>
-              </div>
-              <div className="h-40 w-2 rounded-full bg-primary/20">
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full bg-transparent" />
-                <div className="h-1/4 w-full rounded-full bg-primary" />
-              </div>
-            </div>
+            <Counter id={4} />
           </div>
         </MaxWidthWrapper>
       </section>
