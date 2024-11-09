@@ -9,7 +9,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from "lucide-react";
 export const HomeNews = () => {
   return (
     <>
-      <section className="overflow-y-hidden max-sm:min-h-dvh sm:h-dvh">
+      <section className="overflow-y-hidden bg-background max-sm:min-h-dvh sm:h-dvh">
         <MaxWidthWrapper className="relative flex h-full items-center">
           <div className="my-24 flex justify-between sm:my-0">
             <div className="flex flex-1 flex-col gap-4 sm:gap-8">

@@ -9,7 +9,7 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col">
+      <div className="relative *:sticky *:top-0">
         <Hero />
         <HomeCards />
         <MailingList />
